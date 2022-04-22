@@ -1,0 +1,11 @@
+on: [pull_request]
+
+jobs:
+  assert:
+    runs-on: ubuntu-latest
+    name: Check PR Docs Actions
+    steps:  
+    - name: PR Docs Actions
+      uses: hannut91/pr-docs-actions@0.0.1
+      with:
+        myToken: ${{ secrets.GITHUB_TOKEN }}
