@@ -1,4 +1,8 @@
-on: [pull_request]
+name: Closed
+
+on:
+  pull_request:
+    types: [closed]
 
 jobs:
   assert:
@@ -7,5 +11,3 @@ jobs:
     steps:  
     - name: PR Docs Actions
       uses: hannut91/pr-docs-actions@0.0.1
-      with:
-        myToken: ${{ secrets.GITHUB_TOKEN }}
