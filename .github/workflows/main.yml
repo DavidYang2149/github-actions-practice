@@ -12,5 +12,6 @@ jobs:
     - name: PR Docs Actions
       uses: hannut91/pr-docs-actions@0.0.1
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        myToken: ${{ secrets.GITHUB_TOKEN }}
+        # githubToken: ${{ secrets.GITHUB_TOKEN }}
+        # personalToken: ${{ secrets.PERSONAL_TOKEN }}
