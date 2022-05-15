@@ -10,8 +10,8 @@ jobs:
     name: Check PR Docs Actions
     steps:  
     - name: PR Docs Actions
-      uses: hannut91/pr-docs-actions@0.0.1
+      uses: hannut91/pr-docs-actions@0.0.2
       with:
-        myToken: ${{ secrets.GITHUB_TOKEN }}
-        # githubToken: ${{ secrets.GITHUB_TOKEN }}
-        # personalToken: ${{ secrets.PERSONAL_TOKEN }}
+        # myToken: ${{ secrets.GITHUB_TOKEN }}
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
+        personalToken: ${{ secrets.PERSONAL_TOKEN }}
